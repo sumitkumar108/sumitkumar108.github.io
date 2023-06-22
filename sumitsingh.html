@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0116)http://127.0.0.1:5500/practice.html?address=&email=&Pincode=&card+type=visa&cardnumber=&exe_date=&cvv=&submit=Submit -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <style>
+        h1,h2{
+            color: rgba(102, 255, 0, 0.731);
+            column-width: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="http://127.0.0.1:5500/practice.html?address=&amp;email=&amp;Pincode=&amp;card+type=visa&amp;cardnumber=&amp;exe_date=&amp;cvv=&amp;submit=Submit">
+        <h1>code with sumit kumar singh</h1>
+        <h1>payment form </h1>
+        <h2>contact information</h2>
+        <p>
+            Name: <input type="text">
+
+        </p>
+        <fieldset>
+            <legend>Gender</legend>
+            Male: <input type="radio" name="gender" id="">
+            Female: <input type="radio" name="gender" id="">
+
+        </fieldset>
+        <p>
+            Address: <textarea name="address" id="address" cols="30" rows="10"></textarea>
+
+        </p>
+        <p>
+            Email: <input type="Email" name="email" id="email">
+
+        </p>
+        <p>
+            Pincode: <input type="number" name="Pincode" id="Pincode">
+            </p><h2>payment information </h2>
+
+        <p></p>
+        <p>
+            card type: 
+            <select name="card type" id="card type">
+                <option value="visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Master card">Master card </option>
+            </select>
+
+        </p>
+        <p>
+            Card Number: <input type="number" name="cardnumber" id="cardnumber">
+
+        </p>
+        <p>
+            Expirationdate: <input type="date" name="exe_date" id="exe_date">
+
+        </p>
+        <p>
+            CVV: <input type="password" name="cvv" id="cvv">
+
+        </p>
+        <input type="submit" name="submit" id="submit">
+    </form>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
